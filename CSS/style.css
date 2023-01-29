@@ -1,0 +1,82 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+                    /* HEADER */
+
+nav{
+    align-items :center;
+    display:flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 16px;
+}
+
+ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: flex-end;
+    gap: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #0065FC;
+}
+
+                    /* SECTION 1 " RECHERCHE" */
+
+#locdot{
+    background-color: #DEEBFF;
+    padding: 4px 6px 4px 6px;
+    border-radius: 25% 0 0 25%;
+}
+
+#searchfield{
+    padding: 4px;
+    display: flex;
+}
+
+#searchtext {
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+    border-top: 0.3px solid lightgrey; 
+    border-bottom: 0.3px solid lightgrey;
+    
+}
+
+#rechercher{
+    background-color: #0065FC;
+    padding: 4px  ;
+    border-radius: 0 32px 32px 0;
+    color: white;
+}
+
+#filtres {
+    margin: 16px 0px;
+}
+
+#filtres button{
+    padding: 4px 8px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+}
+
+#filtres button:hover{
+    background-color: #DEEBFF;
+    text-decoration: none;
+}
+
+#filtres i{
+    color:#0065FC;
+    padding-right: 5px;
+}
+
+
