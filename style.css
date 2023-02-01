@@ -1,0 +1,204 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+                    /* HEADER */
+
+nav{
+    align-items :center;
+    display:flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 1em;
+    font-weight:bold;
+}
+ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: flex-end;
+    gap: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:active{
+    color: blue
+}
+
+a:visited {
+    color:black;
+}
+
+header a{
+    padding-top: 16px;
+}
+
+header ul a:hover{
+    color: #0065FC;
+    border-top: 1px solid blue;
+}
+
+i{
+    padding: 0px 5px}
+
+                    /* SECTION 1 " RECHERCHE" */
+
+#locdot{
+    background-color: #DEEBFF;
+    padding: 4px 6px 4px 6px;
+    border-radius: 25% 0 0 25%;
+}
+
+#searchfield{
+    padding: 4px;
+    display: flex;
+}
+
+#searchtext {
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+    border-top: 0.3px solid lightgrey; 
+    border-bottom: 0.3px solid lightgrey;
+    
+}
+
+#rechercher{
+    background-color: #0065FC;
+    padding: 4px;
+    border: none;
+    border-radius: 0 32px 32px 0;
+    color: white;
+    cursor:pointer;
+}
+
+#filtres {
+    margin: 16px 0px;
+    
+}
+
+#filtres button{
+    padding: 4px 8px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+
+#filtres i{
+    color:#0065FC;
+    padding-right: 5px;
+}
+
+
+                    /* SECTION 1 " RECHERCHE" */
+
+#Hebergements{
+    display:flex;
+    flex-direction: row;
+}
+
+#Hebergements1{
+    width: 68%;
+    background-color: #f2f2f2;
+    border-radius: 5%;
+}
+
+#hebergements-Marseille {
+    padding:2% 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    font-size: 0.5rem;
+    width: 27%;
+    padding :1%;
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 5%;
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 2px lightgrey;
+}
+
+.card img{
+    height:80px;
+    width:100%;
+    align-self: center;
+    border-radius: 5% 5% 0% 0%;
+    object-fit:cover
+}
+
+#Populaires{
+    width: 28%;
+    margin: 0 2%;
+    background-color: #f2f2f2;
+    border-radius: 5%;
+}
+
+.pop-card img{
+    height: 80px;
+    width:35%;
+    object-fit: cover;
+}
+                    /* SECTION 3 "ACTIVITES" */
+
+#Activites-Marseille{
+    background-color: #f2f2f2;
+}
+
+#activites{
+    
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.activites-cards{
+    width:22%;
+    margin:2%;
+    box-shadow: 1px 2px 2px lightgrey;
+    border-radius: 5% 5% 0 0 ;
+}
+
+.activites-cards img{
+    
+    height:200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5% 5% 0 0 ;
+}
+                    /* FOOTER */
+
+footer {
+    background-color: #f2f2f2;
+    margin-top: 4%;
+    display:flex;
+    flex-direction: row;
+    align-content: space-between;
+    
+}
+
+.footer-list{
+
+    margin: 5%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
