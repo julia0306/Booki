@@ -1,6 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    margin: 2%;
 }
 
                     /* HEADER */
@@ -56,12 +57,12 @@ i{
 
 #locdot{
     background-color: #f2f2f2;
-    padding: 10px 8px;
+    padding: 14px 10px;
     border-radius: 25% 0 0 25%;
 }
 
 #searchfield{
-    padding: 4px;
+    padding: 8px;
     display: flex;
 }
 
@@ -76,9 +77,9 @@ i{
 
 #rechercher{
     background-color: #0065FC;
-    padding: 4px;
+    padding: 8px;
     border: none;
-    border-radius: 0 32px 32px 0;
+    border-radius: 0 8px 8px 0;
     color: white;
     cursor:pointer;
 }
@@ -88,12 +89,20 @@ i{
     
 }
 
+#filtres span{
+    margin-right: 2%;
+}
+
 #filtres button{
-    padding: 4px 8px;
+    padding: 8px 8px;
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 25px;
     text-decoration: none;
+}
+
+#filtres button:hover {
+    background-color: #DEEBFF;
 }
 
 
@@ -115,12 +124,16 @@ i{
 #Hebergements{
     display:flex;
     flex-direction: row;
+    
+    
 }
+
 
 #Hebergements1{
     width: 68%;
     background-color: #f2f2f2;
     border-radius: 5%;
+    padding: 2%
 }
 
 #hebergements-Marseille {
@@ -154,6 +167,7 @@ i{
 
 #Populaires{
     width: 28%;
+    padding: 2%;
     margin: 0 2%;
     background-color: #f2f2f2;
     border-radius: 5%;
@@ -166,9 +180,6 @@ i{
 }
                     /* SECTION 3 "ACTIVITES" */
 
-#Activites-Marseille{
-    background-color: #f2f2f2;
-}
 
 #activites{
     
@@ -177,23 +188,29 @@ i{
     
 }
 
+#Activites-Marseille{
+    padding: 3% 2%;
+}
+
 .activites-cards{
     width:22%;
+    height: 320px;
     margin:2%;
     box-shadow: 1px 2px 2px lightgrey;
-    border-radius: 5% 5% 0 0 ;
+    border-radius: 5%
 }
 
 .activites-cards img{
     
-    height:200px;
+    height:280px;
     width: 100%;
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 5% 5% 0 0 ;
 }
                     /* FOOTER */
 
 footer {
+
     background-color: #f2f2f2;
     margin-top: 4%;
     display:flex;
@@ -203,11 +220,8 @@ footer {
 }
 
 .footer-list{
-
     margin: 5%;
     width: 35%;
     display: flex;
     flex-direction: column;
-    
-    
 }
