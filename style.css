@@ -9,6 +9,7 @@ nav{
     align-items :center;
     display:flex;
     justify-content: space-between;
+    margin-bottom: 32px;
 }
 
 h1{
@@ -19,8 +20,9 @@ h2{
     font-size: 1em;
     font-weight:bold;
 }
+
 ul{
-    list-style-type: none;
+    list-style: none;
     display:flex;
     justify-content: flex-end;
     gap: 10%;
@@ -53,8 +55,8 @@ i{
                     /* SECTION 1 " RECHERCHE" */
 
 #locdot{
-    background-color: #DEEBFF;
-    padding: 4px 6px 4px 6px;
+    background-color: #f2f2f2;
+    padding: 10px 8px;
     border-radius: 25% 0 0 25%;
 }
 
@@ -100,6 +102,13 @@ i{
     padding-right: 5px;
 }
 
+#infos i{
+    color:#0065FC;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    padding: 8px 7px;
+    margin-right: 8px;
+}
 
                     /* SECTION 1 " RECHERCHE" */
 
