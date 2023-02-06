@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/CSS" href="style.css">
+    <link rel="stylesheet" type="text/CSS" href="style-tablettes.css" media="screen and (max-width:992px)">
     <script src="https://kit.fontawesome.com/b932d69e5e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,113 +18,127 @@
         <nav>
         <a href=index.html><img id = "logo" src="./Images/logo/Booki.png" alt="logo Booki" height="16px"></a>
         <ul>
-            <li><a href=#>Hébergements</a></li>
+            <li><a href=#Hebergements1>Hébergements</a></li>
             <li><a href=#>Activités</a></li>
         </ul>
         </nav>
     </header>
 
+    <main>
                             <!-- SECTION 1 "RECHERCHE" -->
-    <section id="search">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <form id="searchfield" method="get" action="">
-            <i id="locdot" class="fa-solid fa-location-dot fa-xs"></i>
-            <input id="searchtext" type="text" placeholder="Marseille, France">
-            <input id="rechercher" type="submit" value="Rechercher">
-        </form>
-        <div id = "filtres">
-            <span>Filtres</span>
-            <button><a href="#"><i class="fa-solid fa-money-bill-wave"></i>Économique</a></button>
-            <button><a href="#"><i class="fa-solid fa-child-reaching"></i>Familial</a></button>
-            <button><a href="#"><i class="fa-solid fa-heart"></i>Romantique</a></button>
-            <button><a href="#"><i class="fa-solid fa-dog"></i>Animaux autorisés</a></button>
-        </div>
-        <div id ="infos">
-            <p><i id= "loginfo" class="fa fa-solid fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-    </section>
+
+        <section id="searchbar">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form id="searchfield" method="get" action="">
+                <i id="locdot" class="fa-solid fa-location-dot fa-xs"></i>
+                <input id="searchtext" type="text" placeholder="Marseille, France">
+                <input id="rechercher" type="submit" value="Rechercher">
+            </form>
+            <div id = "filterbar">
+                <h3>Filtres</h3>
+                <button><a href="#"><i class="fa-solid fa-money-bill-wave"></i>Économique</a></button>
+                <button><a href="#"><i class="fa-solid fa-child-reaching"></i>Familial</a></button>
+                <button><a href="#"><i class="fa-solid fa-heart"></i>Romantique</a></button>
+                <button><a href="#"><i class="fa-solid fa-dog"></i>Animaux autorisés</a></button>
+            </div>
+            <div id ="infos">
+                
+                <p><i id= "loginfo" class="fa fa-solid fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
 
                                 <!-- SECTION 2 "HEBERGEMENTS" -->
 
-    <section id="Hebergements">
-        
-        <div id ="Hebergements1">
-            <h1>Hébergements à Marseille</h1>
-            <div id ="hebergements-Marseille">
-                <article class="card">
-                    <img src="./Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo de l'auberge de la Canebière">
-                    <h2>Auberge de la Canebière</h2>
-                    <p>Nuit à partir de 25€</p>
-                </article>
-                <article class="card">
-                    <img src="./Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo de l'hôtel du port">
-                    <h2>Hotel du port</h2>
-                    <p>Nuit à partir de 52€</p>
-                </article>
-                <article class="card">    
-                    <img src="./Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo de l'auberge de la Canebière">
-                    <h2>Auberge de la Canebière</h2>
-                    <p>Nuit à partir de 76€</p>
-                </article>
-                <article class="card">
-                    <img src="./Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo de l'hôtel de la mer">
-                    <h2>Hôtel de la mer</h2>
-                    <p>Nuit à partir de 46€</p>
-                </article>
-                <article class="card"><img src="./Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo de l'auberge de la Canebière">
-                    <h2>Auberge de la Canebière</h2>
-                    <p>Nuit à partir de 23€</p>
-                </article>
-                <article class="card">
-                    <img src="./Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo de l'hôtel Chez Amina">
-                    <h2>Hôtel chez Amina</h2>
-                    <p>Nuit à partir de 96€</p>
-                </article>
+        <section id="offers">
+            <div id ="Hebergements">
+                <h1>Hébergements à Marseille</h1>
+                <div id ="hebergements-Marseille">
+                    <article class="card">
+                        <img src="./Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo de l'auberge de la Canebière">
+                        <h2>Auberge de la Canebière</h2>
+                        <p>Nuit à partir de 25€</p>
+                    </article>
+                    <article class="card">
+                        <img src="./Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo de l'hôtel du port">
+                        <h2>Hotel du port</h2>
+                        <p>Nuit à partir de 52€</p>
+                    </article>
+                    <article class="card">    
+                        <img src="./Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo de l'auberge de la Canebière">
+                        <h2>Auberge de la Canebière</h2>
+                        <p>Nuit à partir de 76€</p>
+                    </article>
+                    <article class="card">
+                        <img src="./Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo de l'hôtel de la mer">
+                        <h2>Hôtel de la mer</h2>
+                        <p>Nuit à partir de 46€</p>
+                    </article>
+                    <article class="card"><img src="./Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo de l'auberge de la Canebière">
+                        <h2>Auberge de la Canebière</h2>
+                        <p>Nuit à partir de 23€</p>
+                    </article>
+                    <article class="card">
+                        <img src="./Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo de l'hôtel Chez Amina">
+                        <h2>Hôtel chez Amina</h2>
+                        <p>Nuit à partir de 96€</p>
+                    </article>
+                </div>
+                <a id ="more" href="#">Afficher plus</a>
             </div>
-            <a id ="more" href="#">Afficher plus</a>
-    
-        </div>
-        <div id ="Populaires">
-            <h1>Les plus populaires</h1>
-            <div id="Populaires-cards">
-                <article class="pop-card">
-                    <img src="./Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo de l'hôtel Le soleil du matin">
-                    <h2>Hôtel Le soleil du matin</h2>
-                    <p>Nuit à partir de 128€</p>
+            <div id ="popular">
+                <h1>Les plus populaires</h1>
+                <div id="Populaires-cards">
+                    <article class="pop-card">
+                        <img src="./Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo de l'hôtel Le soleil du matin">
+                        <div class="pop-description">
+                            <h2>Hôtel Le soleil du matin</h2>
+                            <p>Nuit à partir de 128€</p>
+                        </div>
+                    </article>
+                    <article class="pop-card">
+                        <img src="./Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo de l'hôtel Chez Amina">
+                        <div class="pop-description">
+                            <h2>Chambres d'hôtes Au coeur de l'eau</h2>
+                            <p>Nuit à partir de 72€</p>
+                        </div>
+                    </article>
+                    <article class="pop-card">
+                        <img src="./Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo de l'hôtel Chez Amina">
+                        <div class="pop-description">
+                            <h2>Hôtel Bleu et Blanc</h2>
+                            <p>Nuit à partir de 68€</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+                                <!-- SECTION 3 "ACTIVITES" -->
+    <section id="activities">
+        <div id="Activites-Marseille">
+            <h1>Activités à Marseille</h1>
+            <div id="cards">
+                <article class="activites-cards">
+                    <img src="./Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo de l'hôtel Chez Amina">
+                    <h2>Vieux-Port</h2>
                 </article>
-                <article class="pop-card">
-                    <img src="./Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo de l'hôtel Chez Amina">
-                    <h2>Chambres d'hôtes Au coeur de l'eau</h2>
-                    <p>Nuit à partir de 96€</p>
+                <article class="activites-cards">
+                    <img src="./Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo de l'hôtel Chez Amina">
+                    <h2>Fort de Pomègues</h2>
+                </article>
+                <article class="activites-cards">
+                    <img src="./Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo de l'hôtel Le soleil du matin">
+                    <h2>Parc national des Calanques</h2>
+                </article>
+                <article class="activites-cards">
+                    <img src="./Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de l'hôtel Le soleil du matin">
+                    <h2>Notre-Dame-de-la-Garde</h2>
                 </article>
             </div>
         </div>
     </section>
-
-                                <!-- SECTION 3 "ACTIVITES" -->
-<section id="search">
-    <div id="Activites-Marseille">
-        <h1>Activités à Marseille</h1>
-        <div id="activites">
-            <article class="activites-cards">
-                <img src="./Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo de l'hôtel Chez Amina">
-                <h2>Vieux-Port</h2>
-            </article>
-            <article class="activites-cards">
-                <img src="./Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo de l'hôtel Chez Amina">
-                <h2>Fort de Pomègues</h2>
-            </article>
-            <article class="activites-cards">
-                <img src="./Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo de l'hôtel Le soleil du matin">
-                <h2>Parc national des Calanques</h2>
-            </article>
-            <article class="activites-cards">
-                <img src="./Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de l'hôtel Le soleil du matin">
-                <h2>Notre-Dame-de-la-Garde</h2>
-            </article>
-        </div>
-    </div>
+</main>
 
                                     <!-- FOOTER -->
 <footer>
