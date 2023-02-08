@@ -9,14 +9,38 @@ h1{
     font-size: 22px;
 }
 
-h2{
+.subtitle{
     font-size: 16px;
-    font-weight:bold;
+    font-weight: normal;
+}
+
+h2{
+    font-size:18 px;
+font-weight: bold;
+}
+
+footer h2{
+    font-size: 18px;
+    margin-bottom: 0.5%;
 }
 
 h3{
     font-size:18px;
+    margin:0%;
+    padding:0%
 }
+
+
+p{
+    margin:0%;
+    padding:0%
+}
+
+
+section {
+    margin-bottom:4%;
+}
+
 
 
                     /* HEADER */
@@ -28,8 +52,12 @@ nav{
     margin-bottom: 4%;
 }
 
+#logo{
+    height: 32px; 
+}
 
-ul{
+
+nav ul{
     list-style: none;
     display:flex;
     justify-content: flex-end;
@@ -57,15 +85,14 @@ header ul a:hover{
     border-top: 1px solid blue;
 }
 
-i{
-    padding: 0px 5px}
+
 
 
                     /* SECTION 1 " RECHERCHE" */
 
 #locdot{
     background-color: #f2f2f2;
-    padding: 14px 10px;
+    padding: 20px 15px;
     border-radius: 25% 0 0 25%;
 }
 
@@ -78,18 +105,27 @@ i{
     border-left: none;
     border-right: none;
     border-radius: 0%;
-    border-top: 0.3px solid lightgrey; 
-    border-bottom: 0.3px solid lightgrey;
-    
+    border-top: 0.3px solid #f2f2f2; 
+    border-bottom: 0.3px solid #f2f2f2;
+    padding:1% 5% 1% 1%;
+}
+
+::placeholder{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5%
 }
 
 #rechercher{
     background-color: #0065FC;
-    padding: 8px;
+    padding-right: 2%;
+    padding-left: 2%; 
     border: none;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 16px 16px 0;
     color: white;
     cursor:pointer;
+
 }
 
 #rechercher:hover{
@@ -102,27 +138,27 @@ i{
     margin: 16px 0px;
     display: flex;
     flex-direction: row;
+    font-weight: bold;
+    align-items: center;
 }
 
-
-
-#filterbar button{
-    padding: 8px 8px;
-    margin: 8px 12px;
+#filterbar .button{
+    padding: 10px 12px;
+    margin: 1% 1.5%;
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 25px;
     text-decoration: none;
 }
 
-#filterbar button:hover {
+#filterbar .button:hover {
     background-color: #DEEBFF;
 }
 
 
 #filterbar i{
     color:#0065FC;
-    padding-right: 5px;
+    padding-right: 14px;
 }
 
 
@@ -131,23 +167,33 @@ i{
     border: 1px solid lightgrey;
     border-radius: 50%;
     margin-right: 8px;
-    padding: 10px;
+    padding: 10px 8px;
 }
 
-                    /* SECTION 1 " RECHERCHE" */
+                    /* SECTION 2 " OFFRES" */
+.section-title{
+    padding-top:2px;
+    font-size: 22px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#popular-cards{
+    height:90%;
+}
 
 #offers{
     display:flex;
     flex-direction: row;
-     
 }
 
 
 #Hebergements{
-    width: 72%;
+    width: 70%;
     background-color: #f2f2f2;
-    border-radius: 5%;
-    padding: 0% 1% 2% 2%;
+    border-radius: 25px;
+    padding: 0% 1% 1% 1%;
 }
 
 #hebergements-Marseille {
@@ -155,22 +201,24 @@ i{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 16px;
 }
 
 .card{
-    font-size: 0.5rem;
-    width: 28%;
-    padding :1%;
-    margin: 0.5%;
+    width: 29%;
+    height: 176px;
+    margin-top: 1%;
+    padding: 0.8%;
     display: flex;
     flex-direction: column;
-    border: none;
-    border-radius: 5%;
+    justify-content: space-between;
+    border-radius: 16px;
     background-color: #FFFFFF;
     box-shadow: 1px 2px 2px lightgrey;
 }
+
+
 .card:hover{
-    transform: scale(1.01);
     border:  3px inset #0065FC ;
     transition:.2s ease-in-out;
     cursor: pointer;
@@ -180,19 +228,36 @@ i{
     height:100px;
     width:100%;
     align-self: center;
-    border-radius: 5% 5% 0% 0%;
+    border-radius: 16px 16px 0% 0%;
     object-fit:cover
 }
 
+#Hebergements a{
+    display: block;
+    margin: 2% 0% 0% 1%;
+}
+
 #popular{
-    width: 420px;
-    padding: 0% 2% 0% 2%;
-    margin: 0 2%;
+    width: 30%;
+    padding: 0% 2%;
+    margin-left:2%;
     background-color: #f2f2f2;
-    border-radius: 5%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section-title i{
+    color:#0065FC
+}
+
+#popular a{
+    display:inline-flex
 }
 
 .pop-card{
+    height: 28%;
     display:flex;
     flex-direction: row;
     background-color: #FFFFFF;
@@ -201,54 +266,78 @@ i{
 }
 
 #popular img{
-    padding: 3%;
-    height: 100px;
-    width:35%;
-    border-radius: 16px;
+    padding: 2%;
+    height: 120px;
+    width: 120px;
+    border-radius: 16px 0px 0px 16px;
     object-fit:cover;
+    align-self: center;
 }
 
-.pop-card:hover{
+
+.pop-card:hover {
     box-shadow: #0065FC 2px 1px 2px ;
-    transition:.2s ease-in-out;
+    transition:1s ease-in-out;
     background-color: #0065FC;
-    color: white;
-}
-
-.pop-card:hover{
     cursor: pointer;
 }
+
+
 
 .pop-description{
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-around
+    }
+
+.notation{
+    display:flex;
 }
+
+.notation i{
+    padding:0%;
+}
+
+.notation-blue i{
+    color:#0065FC
+}
+
+
+.notation-grey i{
+    color: #f2f2f2
+}
+
+.pop-card:hover > a >.pop-description > .notation > .notation-blue i{
+    color: white;
+    transition: 0.5s;
+}
+
+.pop-card:hover > a > .pop-description> .notation > .notation-grey i{
+    color: darkblue;
+    transition: 0.5s;
+}
+
                     /* SECTION 3 "ACTIVITES" */
 
 
 #cards{
-    
     display:flex;
     flex-direction: row; 
+    justify-content: space-between;
 }
 
-#Activites-Marseille{
-    padding: 3% 2%;
-}
+
 
 .activites-cards{
-    width:22%;
-    height: 320px;
-    margin:2%;
-    padding-bottom: 8px;
-    box-shadow: 1px 2px 2px lightgrey;
-    border-radius: 5%
+    width:24%;
+    box-shadow: 5px 5px 10px lightgrey;
+    border-radius: 5%;
 }
+
 
 .activites-cards:hover{
     border: 3px groove grey;
-    transition:.2s ease-in-out;
+    transition:0.1s ease-in-out;
     cursor: pointer;
 }
 
@@ -258,21 +347,31 @@ i{
     object-fit:cover;
     border-radius: 5% 5% 0 0 ;
 }
+
+#activities h3{
+    margin: 5%; 
+}
                     /* FOOTER */
 
 footer {
-
     background-color: #f2f2f2;
-    margin-top: 4%;
+    padding: 2%;
     display:flex;
     flex-direction: row;
-    align-content: space-between;
-    
+    justify-content: space-around
 }
 
-.footer-list{
-    margin: 5%;
-    width: 35%;
+.footer-list{ 
+    width: 30%;
     display: flex;
     flex-direction: column;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer li{
+    padding: 3% 0% 0% 0%;
 }

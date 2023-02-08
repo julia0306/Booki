@@ -1,1 +1,4 @@
-body{background-color:blue;}
+nav{
+    display: flex;
+    flex-direction: column;
+}
