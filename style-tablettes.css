@@ -1,4 +1,79 @@
-nav{
-    display: flex;
-    flex-direction: column;
+                    /* HEADER */
+
+header ul a:hover{
+    color: #0065FC;
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+    padding-bottom: 16px;
 }
+
+                    /* SECTION 1 */
+
+#filterbar .button{
+    padding:1% 0.5%;
+}
+
+
+.filter-buttons{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+                    /* SECTION 2 */
+
+#offers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Hebergements{
+    width: 100vw;
+    padding-bottom: 2%;
+}
+
+
+#popular{
+    margin-left: 0%;
+    width: 100vw;
+
+}
+
+#popular-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.pop-card{
+    height:70%;
+    width:30%;
+}
+
+.features{
+    width:80%
+}
+.pop-card img{
+    height:90%
+}
+
+h3{
+    font-size: 14px;
+}
+
+p{
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+.notation i{
+    padding:0%;
+    font-size: 12px;
+}
+
+                    /* SECTION 3 */
+
+
+                    
+                    /* FOOTER */

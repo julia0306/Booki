@@ -15,10 +15,13 @@ h1{
 }
 
 h2{
-    font-size:18 px;
+    font-size:22px;
 font-weight: bold;
 }
 
+#filterbar h2{
+    font-size: 18px;
+}
 footer h2{
     font-size: 18px;
     margin-bottom: 0.5%;
@@ -64,6 +67,7 @@ nav ul{
     gap: 15%;
 }
 
+
 a{
     text-decoration: none;
 }
@@ -82,7 +86,8 @@ header a{
 
 header ul a:hover{
     color: #0065FC;
-    border-top: 1px solid blue;
+    border-top: 2px solid blue;
+    padding-top: 32px;
 }
 
 
@@ -117,8 +122,9 @@ header ul a:hover{
     padding-left: 5%
 }
 
-#rechercher{
+#research{
     background-color: #0065FC;
+    font-size:18px;
     padding-right: 2%;
     padding-left: 2%; 
     border: none;
@@ -128,23 +134,31 @@ header ul a:hover{
 
 }
 
-#rechercher:hover{
+#research:hover{
     background-color: #003bfc;
     text-decoration:dashed;
-    font-size: 14.5px;
+    font-size: 18px;
 }
 
 #filterbar {
-    margin: 16px 0px;
+    width:100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     font-weight: bold;
-    align-items: center;
+    align-items: center
+}
+
+.filter-buttons{
+    width:100%;
+    display: flex;
+    flex-direction: row;
 }
 
 #filterbar .button{
-    padding: 10px 12px;
+    font-size: 17px;
     margin: 1% 1.5%;
+    padding:1% 0.5%;
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 25px;
@@ -161,13 +175,21 @@ header ul a:hover{
     padding-right: 14px;
 }
 
+#filterbar a{
+    font-size: 17px;
+}
 
-#infos i{
+
+#info i{
     color:#0065FC;
     border: 1px solid lightgrey;
     border-radius: 50%;
     margin-right: 8px;
     padding: 10px 8px;
+}
+
+#info{
+    margin-top: 2%;
 }
 
                     /* SECTION 2 " OFFRES" */
@@ -245,7 +267,7 @@ header ul a:hover{
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .section-title i{
@@ -257,7 +279,7 @@ header ul a:hover{
 }
 
 .pop-card{
-    height: 28%;
+    height:28%;
     display:flex;
     flex-direction: row;
     background-color: #FFFFFF;
@@ -267,10 +289,10 @@ header ul a:hover{
 
 #popular img{
     padding: 2%;
-    height: 120px;
-    width: 120px;
+    height: 90%;
+    width: 100px;
     border-radius: 16px 0px 0px 16px;
-    object-fit:cover;
+    object-fit: cover;
     align-self: center;
 }
 
@@ -324,6 +346,7 @@ header ul a:hover{
     display:flex;
     flex-direction: row; 
     justify-content: space-between;
+    gap:24px;
 }
 
 
@@ -331,7 +354,7 @@ header ul a:hover{
 .activites-cards{
     width:24%;
     box-shadow: 5px 5px 10px lightgrey;
-    border-radius: 5%;
+    border-radius: 25px;
 }
 
 
@@ -345,7 +368,7 @@ header ul a:hover{
     height:280px;
     width: 100%;
     object-fit:cover;
-    border-radius: 5% 5% 0 0 ;
+    border-radius: 25px 25px 0 0 ;
 }
 
 #activities h3{

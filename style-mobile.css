@@ -1,0 +1,174 @@
+
+
+body{
+    margin:0%;
+    padding: 0%;
+}
+                    /* HEADER */
+nav{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header ul{
+    background-color: aqua;
+    margin-top:5%;
+    width: 100%;
+    padding:0%;
+}
+
+
+header li{
+    background-color: brown;
+
+    width:100%;
+    display: flex;
+    justify-content:center;
+    border-bottom: 2px solid grey
+}
+
+header li a:hover{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+
+                    /* SECTION 1 */
+
+#searchbar{
+padding-left:2vw;
+}
+#searchfield{
+
+    margin-left: 0%
+}
+
+#filterbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-buttons{
+    flex-wrap: wrap;
+}
+
+#filterbar .button{
+    width:40%;
+    padding:3% 1%;
+    font-size: 11px;
+}
+#filterbar h2{
+    align-self: flex-start;
+}
+
+
+
+                    /* SECTION 2 */
+
+#offers{
+    display: flex;
+    flex-direction: column-reverse;
+}             
+
+#popular-cards{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#popular{
+    border-radius:0%;
+    width: 97%;
+    margin: 0%;
+    padding: 2%; 
+}
+.pop-card{
+    height:145px;
+    width:95%;
+    
+}
+
+.pop-description{
+    width:60vw;
+    margin:0%;
+}
+
+#Hebergements{
+    background-color: white;
+    width:96%;
+    padding:2%;
+    margin: 0%;
+
+}
+
+
+
+
+#hebergements-Marseille{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card{
+    width:95%;
+    height:200px;
+}
+
+.card img{
+    height:130px;
+    object-fit:cover;
+}
+
+                    /* SECTION 3 */
+
+#activities{
+    width:96%;
+    padding:2%
+}
+
+#cards{
+    display:flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    gap:24px;
+    }
+
+.activites-cards{
+    height:200px;
+    width: 97%;
+    }
+
+#activities img{
+    height:124px;
+}
+                    
+                    /* FOOTER */
+
+footer {
+    width: 100%;
+    padding:8% 5%;
+    flex-direction: column;
+}
+
+.footer-list{ 
+    width: 90%;
+    margin:3%;
+}
+
+footer li{
+    padding-top:0%;
+
+}
+
+footer h2{
+    margin: 0%;
+
+}
