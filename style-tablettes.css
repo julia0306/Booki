@@ -3,14 +3,17 @@
 header ul a:hover{
     color: #0065FC;
     border-top: none;
-    border-bottom: 2px solid #0065FC;
+    border-bottom: 4px solid #0065FC;
     padding-bottom: 16px;
 }
 
                     /* SECTION 1 */
-
+#filterbar h2{
+    margin-right:2%;
+}
 #filterbar .button{
-    padding:1% 0.5%;
+    padding:1.5% 1.8%;
+    margin: 1% 0.5%
 }
 
 
@@ -29,25 +32,26 @@ header ul a:hover{
 
 #Hebergements{
     width: 100vw;
-    padding-bottom: 2%;
+    padding: 2%;
 }
 
 
 #popular{
+    padding:2% 2% 0% 2%;
     margin-left: 0%;
     width: 100vw;
-
 }
 
 #popular-cards{
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+
 }
 
 .pop-card{
     height:70%;
-    width:30%;
+    width:32%;
+
 }
 
 .features{
@@ -73,7 +77,17 @@ p{
 }
 
                     /* SECTION 3 */
+.activites-cards{
+    align-self: center;
+    width:22%;
+    height:320px;
+}
 
+#activities h3{
+    padding-top:10%;
+}
 
-                    
+#cards img{
+    height:250px;
+}      
                     /* FOOTER */

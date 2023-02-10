@@ -16,7 +16,7 @@ h1{
 
 h2{
     font-size:22px;
-font-weight: bold;
+    font-weight: bold;
 }
 
 #filterbar h2{
@@ -97,12 +97,13 @@ header ul a:hover{
 
 #locdot{
     background-color: #f2f2f2;
+    font-size:22px;
     padding: 20px 15px;
     border-radius: 25% 0 0 25%;
 }
 
 #searchfield{
-    padding: 8px;
+    margin: 4% 0%;
     display: flex;
 }
 
@@ -122,6 +123,10 @@ header ul a:hover{
     padding-left: 5%
 }
 
+input:focus{
+    outline:none;
+}
+
 #research{
     background-color: #0065FC;
     font-size:18px;
@@ -136,8 +141,11 @@ header ul a:hover{
 
 #research:hover{
     background-color: #003bfc;
-    text-decoration:dashed;
     font-size: 18px;
+}
+
+#magnifying-glass{
+    display: none;
 }
 
 #filterbar {
@@ -158,7 +166,7 @@ header ul a:hover{
 #filterbar .button{
     font-size: 17px;
     margin: 1% 1.5%;
-    padding:1% 0.5%;
+    padding:1% 5%;
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 25px;
@@ -309,7 +317,8 @@ header ul a:hover{
 .pop-description{
     display: flex;
     flex-direction: column;
-    justify-content: space-around
+    justify-content: space-around;
+    padding-left: 5%;
     }
 
 .notation{
@@ -331,12 +340,10 @@ header ul a:hover{
 
 .pop-card:hover > a >.pop-description > .notation > .notation-blue i{
     color: white;
-    transition: 0.5s;
 }
 
 .pop-card:hover > a > .pop-description> .notation > .notation-grey i{
     color: darkblue;
-    transition: 0.5s;
 }
 
                     /* SECTION 3 "ACTIVITES" */
@@ -372,7 +379,7 @@ header ul a:hover{
 }
 
 #activities h3{
-    margin: 5%; 
+    padding:5%
 }
                     /* FOOTER */
 

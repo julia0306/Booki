@@ -1,37 +1,51 @@
 
 
 body{
-    margin:0%;
+    overflow-x: hidden;
+    margin:5% 0% 0% 0%;
     padding: 0%;
 }
+
                     /* HEADER */
 nav{
     display: flex;
     flex-direction: column;
-    
 }
 
 header ul{
-    background-color: aqua;
     margin-top:5%;
     width: 100%;
     padding:0%;
+    gap:0%;
 }
 
 
 header li{
-    background-color: brown;
-
     width:100%;
     display: flex;
     justify-content:center;
-    border-bottom: 2px solid grey
+
+}
+
+header a{
+    text-decoration: none;
+    padding-top: 0%;
+
+}
+
+header li a{
+    color:black;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10%;
+    border-bottom: 4px solid #F2F2F2
 }
 
 header li a:hover{
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
+    padding: 0%;
+
+
+    padding-bottom: 0%;
 }
 
 
@@ -42,11 +56,30 @@ header li a:hover{
 #searchbar{
 padding-left:2vw;
 }
-#searchfield{
 
-    margin-left: 0%
+#searchfield{
+    justify-content: center;
+    margin: 10% 0%;
 }
 
+#research{
+    display: none;
+}
+
+#magnifying-glass{
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    background-color: #0065FC;
+    border-radius: 0px 16px 16px 0px;
+    padding:0% 2%; 
+    color:white;
+    border:none;
+}
+
+#magnifying-glass:hover{
+    cursor:pointer;
+}
 #filterbar{
     display: flex;
     flex-direction: column;
@@ -54,12 +87,15 @@ padding-left:2vw;
 
 .filter-buttons{
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #filterbar .button{
-    width:40%;
-    padding:3% 1%;
-    font-size: 11px;
+    width:30%;
+    margin:2% 5%;
+    padding: 3%;
+    font-size: 13px;
+    font-weight: bold;
 }
 #filterbar h2{
     align-self: flex-start;
@@ -142,12 +178,16 @@ padding-left:2vw;
     }
 
 .activites-cards{
-    height:200px;
     width: 97%;
+    height: 200px;
+    }
+
+#activities h3{
+    padding-top:2%;
     }
 
 #activities img{
-    height:124px;
+    height:150px;
 }
                     
                     /* FOOTER */
