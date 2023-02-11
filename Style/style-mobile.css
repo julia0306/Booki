@@ -19,12 +19,10 @@ header ul{
     gap:0%;
 }
 
-
 header li{
     width:100%;
     display: flex;
     justify-content:center;
-
 }
 
 header a{
@@ -43,8 +41,6 @@ header li a{
 
 header li a:hover{
     padding: 0%;
-
-
     padding-bottom: 0%;
 }
 
@@ -80,6 +76,7 @@ padding-left:2vw;
 #magnifying-glass:hover{
     cursor:pointer;
 }
+
 #filterbar{
     display: flex;
     flex-direction: column;
@@ -140,7 +137,6 @@ padding-left:2vw;
     width:96%;
     padding:2%;
     margin: 0%;
-
 }
 
 
@@ -205,10 +201,8 @@ footer {
 
 footer li{
     padding-top:0%;
-
 }
 
 footer h2{
     margin: 0%;
-
 }

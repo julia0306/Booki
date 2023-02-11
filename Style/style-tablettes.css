@@ -45,7 +45,6 @@ header ul a:hover{
 #popular-cards{
     display: flex;
     justify-content: space-between;
-
 }
 
 .pop-card{
