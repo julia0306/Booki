@@ -5,72 +5,37 @@ body {
     max-width: 1400px;
 }
 
-h1{
+h1,h2{
     font-size: 22px;
 }
 
-.subtitle{
+h3,p, .subtitle{
     font-size: 16px;
+    margin:0%;
+    padding:0%
+}
+
+.subtitle{
     font-weight: normal;
 }
 
-h2{
-    font-size:22px;
-    font-weight: bold;
+#offers p{
+    font-size: 14px;
 }
 
-#filterbar h2{
+
+#filterbar h2, footer h2, ::placeholder{
     font-size: 18px;
 }
-footer h2{
-    font-size: 18px;
-    margin-bottom: 0.5%;
+
+#filterbar a{
+    font-size: 17px;
 }
-
-h3{
-    font-size:18px;
-    margin:0%;
-    padding:0%
-}
-
-
-p{
-    margin:0%;
-    padding:0%
-}
-
-
-section {
-    margin-bottom:4%;
-}
-
-
-
-                    /* HEADER */
-
-nav{
-    align-items :center;
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 4%;
-}
-
-#logo{
-    height: 32px; 
-}
-
-
-nav ul{
-    list-style: none;
-    display:flex;
-    justify-content: flex-end;
-    gap: 15%;
-}
-
 
 a{
     text-decoration: none;
 }
+
 
 a:active{
     color: blue
@@ -78,6 +43,28 @@ a:active{
 
 a:visited {
     color:black;
+}
+
+section, nav {
+    margin-bottom:4%;
+}
+
+                    /* HEADER */
+
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+
+#logo{
+    height: 19px; 
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    gap: 20%;
 }
 
 header a{
@@ -91,19 +78,17 @@ header ul a:hover{
 }
 
 
-
-
                     /* SECTION 1 " RECHERCHE" */
 
 #locdot{
     background-color: #f2f2f2;
     font-size:22px;
     padding: 20px 15px;
-    border-radius: 25% 0 0 25%;
+    border-radius: 16px 0 0 16px;
 }
 
 #searchfield{
-    margin: 4% 0%;
+    margin: 2% 0%;
     display: flex;
 }
 
@@ -118,7 +103,6 @@ header ul a:hover{
 
 ::placeholder{
     color: black;
-    font-size: 18px;
     font-weight: bold;
     padding-left: 5%
 }
@@ -135,13 +119,11 @@ input:focus{
     border: none;
     border-radius: 0 16px 16px 0;
     color: white;
-    cursor:pointer;
-
 }
 
 #research:hover{
     background-color: #003bfc;
-    font-size: 18px;
+    cursor:pointer;
 }
 
 #magnifying-glass{
@@ -149,16 +131,15 @@ input:focus{
 }
 
 #filterbar {
-    width:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-weight: bold;
-    align-items: center
+    align-items: center;
 }
 
 .filter-buttons{
-    width:100%;
+    width:90vw;
     display: flex;
     flex-direction: row;
 }
@@ -166,11 +147,10 @@ input:focus{
 #filterbar .button{
     font-size: 17px;
     margin: 1% 1.5%;
-    padding:1% 5%;
+    padding:1% 2%;
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 25px;
-    text-decoration: none;
 }
 
 #filterbar .button:hover {
@@ -183,15 +163,11 @@ input:focus{
     padding-right: 14px;
 }
 
-#filterbar a{
-    font-size: 17px;
-}
-
 
 #info i{
     color:#0065FC;
     border: 1px solid lightgrey;
-    border-radius: 50%;
+    border-radius: 50px;
     margin-right: 8px;
     padding: 10px 8px;
 }
@@ -201,32 +177,31 @@ input:focus{
 }
 
                     /* SECTION 2 " OFFRES" */
-.section-title{
-    padding-top:2px;
-    font-size: 22px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-#popular-cards{
-    height:90%;
-}
+
 
 #offers{
     display:flex;
     flex-direction: row;
 }
 
+#offers .section-title{
+    margin-left: 2%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-#Hebergements{
+
+
+#offers-main{
     width: 70%;
     background-color: #f2f2f2;
     border-radius: 25px;
-    padding: 0% 1% 1% 1%;
+    padding: 1%;
 }
 
-#hebergements-Marseille {
+#offers-Marseille {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -234,7 +209,11 @@ input:focus{
     gap: 16px;
 }
 
-.card{
+#more{
+    padding:3%
+}
+
+.Marseille-card{
     width: 29%;
     height: 176px;
     margin-top: 1%;
@@ -244,17 +223,17 @@ input:focus{
     justify-content: space-between;
     border-radius: 16px;
     background-color: #FFFFFF;
-    box-shadow: 1px 2px 2px lightgrey;
+    box-shadow: 2px 3px 3px lightgrey;
 }
 
 
-.card:hover{
+.Marseille-card:hover{
     border:  3px inset #0065FC ;
     transition:.2s ease-in-out;
     cursor: pointer;
 }
 
-.card img{
+.Marseille-card img{
     height:100px;
     width:100%;
     align-self: center;
@@ -262,14 +241,10 @@ input:focus{
     object-fit:cover
 }
 
-#Hebergements a{
-    display: block;
-    margin: 2% 0% 0% 1%;
-}
 
 #popular{
     width: 30%;
-    padding: 0% 2%;
+    padding: 1% 2%;
     margin-left:2%;
     background-color: #f2f2f2;
     border-radius: 25px;
@@ -278,12 +253,21 @@ input:focus{
     justify-content: space-around;
 }
 
+#popular-cards{
+    height:90%;
+}
+
+
 .section-title i{
     color:#0065FC
 }
 
 #popular a{
     display:inline-flex
+}
+
+#popular h3{
+    padding-bottom: 5%;
 }
 
 .pop-card{
@@ -298,7 +282,7 @@ input:focus{
 #popular img{
     padding: 2%;
     height: 90%;
-    width: 100px;
+    width: 40%;
     border-radius: 16px 0px 0px 16px;
     object-fit: cover;
     align-self: center;
@@ -318,7 +302,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 5%;
+    padding: 0% 3%;
     }
 
 .notation{
@@ -338,11 +322,11 @@ input:focus{
     color: #f2f2f2
 }
 
-.pop-card:hover > a >.pop-description > .notation > .notation-blue i{
+.pop-card:hover >.pop-description > .notation > .notation-blue i{
     color: white;
 }
 
-.pop-card:hover > a > .pop-description> .notation > .notation-grey i{
+.pop-card:hover > .pop-description> .notation > .notation-grey i{
     color: darkblue;
 }
 
@@ -400,6 +384,7 @@ footer {
 footer ul{
     list-style: none;
     padding: 0;
+    margin-top: 0%;
 }
 
 footer li{

@@ -12,8 +12,8 @@ header ul a:hover{
     margin-right:2%;
 }
 #filterbar .button{
-    padding:1.5% 1.8%;
-    margin: 1% 0.5%
+    padding:1.5% 1.5%;
+    margin: 1% 0.9%;
 }
 
 
@@ -30,11 +30,14 @@ header ul a:hover{
     flex-wrap: wrap;
 }
 
-#Hebergements{
+#offers-main{
     width: 100vw;
     padding: 2%;
 }
 
+#more{
+    padding-bottom:1%
+}
 
 #popular{
     padding:2% 2% 0% 2%;
@@ -48,14 +51,11 @@ header ul a:hover{
 }
 
 .pop-card{
-    height:70%;
+    height:80%;
     width:32%;
 
 }
 
-.features{
-    width:80%
-}
 .pop-card img{
     height:90%
 }
@@ -79,14 +79,15 @@ p{
 .activites-cards{
     align-self: center;
     width:22%;
-    height:320px;
+    height:280px;
 }
 
 #activities h3{
-    padding-top:10%;
+padding-top: 5%;
+padding-bottom: 5%;
 }
 
 #cards img{
-    height:250px;
+    height:230px;
 }      
                     /* FOOTER */
