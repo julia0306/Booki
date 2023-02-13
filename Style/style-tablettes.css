@@ -76,18 +76,29 @@ p{
 }
 
                     /* SECTION 3 */
+
+
+.Marseille-features{
+    padding-top: 8px;}
+
 .activites-cards{
     align-self: center;
     width:22%;
-    height:280px;
 }
+
+#popular{
+    height: 240px;
+}
+
+.pop-card{
+    height:70%}
 
 #activities h3{
 padding-top: 5%;
 padding-bottom: 5%;
 }
 
-#cards img{
-    height:230px;
-}      
+
+
+
                     /* FOOTER */

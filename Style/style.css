@@ -179,7 +179,6 @@ input:focus{
                     /* SECTION 2 " OFFRES" */
 
 
-
 #offers{
     display:flex;
     flex-direction: row;
@@ -215,17 +214,19 @@ input:focus{
 
 .Marseille-card{
     width: 29%;
-    height: 176px;
+
     margin-top: 1%;
     padding: 0.8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     border-radius: 16px;
     background-color: #FFFFFF;
     box-shadow: 2px 3px 3px lightgrey;
 }
 
+.Marseille-card a{
+        display:inline;
+        height:100%;
+        padding: 0%;
+}
 
 .Marseille-card:hover{
     border:  3px inset #0065FC ;
@@ -234,13 +235,20 @@ input:focus{
 }
 
 .Marseille-card img{
-    height:100px;
+    justify-content: flex-start;
+    height:120px;
     width:100%;
     align-self: center;
     border-radius: 16px 16px 0% 0%;
     object-fit:cover
 }
 
+.Marseille-features{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
 
 #popular{
     width: 30%;
@@ -263,7 +271,13 @@ input:focus{
 }
 
 #popular a{
-    display:inline-flex
+    display:flex;
+    width:100%;
+}
+
+#offers-Marseille a{
+    display:inline;
+    width:100%;
 }
 
 #popular h3{

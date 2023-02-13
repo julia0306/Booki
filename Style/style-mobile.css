@@ -48,7 +48,6 @@ header li a:hover{
 
 
 
-
                     /* SECTION 1 */
 
 #searchbar{
@@ -57,7 +56,7 @@ padding-left:2vw;
 
 #searchfield{
     justify-content: center;
-    margin: 10% 0%;
+    margin: 32px 0px 16px 0px
 }
 
 #research{
@@ -90,8 +89,8 @@ padding-left:2vw;
 }
 
 #filterbar .button{
-    font-size: 11px;
-    width:30%;
+    font-size: 13px;
+    width:33%;
     margin:2% 5%;
     padding: 3%;
     font-weight: bold;
@@ -114,6 +113,7 @@ padding-left:2vw;
     flex-direction: column;
     align-items: center;
 }
+
 
 #popular{
     border-radius:0%;
@@ -167,11 +167,13 @@ padding-left:2vw;
 
 
 
+
                     /* SECTION 3 */
 
 #activities{
     width:96%;
-    padding:2%
+    padding:2%;
+    align-content: center;
 }
 
 #cards{
@@ -187,30 +189,38 @@ padding-left:2vw;
     }
 
 #activities h3{
-    padding-top:2%;
-    }
+    padding:16px;
+}
 
 #activities img{
     height:150px;
+}
+
+#popular{
+    height: 100%;
 }
                     
                     /* FOOTER */
 
 footer {
     width: 100%;
-    padding:8% 5%;
+    padding:16px 32px;
     flex-direction: column;
 }
 
 .footer-list{ 
     width: 90%;
     margin:3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 footer li{
-    padding-top:0%;
+    padding-top:1%;
 }
 
 footer h2{
     margin: 0%;
+    padding-bottom: 10px;
+    padding-top: 24px;
 }
