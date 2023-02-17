@@ -1,104 +1,78 @@
-                    /* HEADER */
+body {
+    margin:32px 32px 0px 32px;
+}
+
+
+
+
+                    /* FONT SIZES & SETTINGS */
+
+p, .notation i{
+    font-size: 13px;
+}
+
+
+/* HEADER */
 
 header ul a:hover{
     color: #0065FC;
     border-top: none;
-    border-bottom: 4px solid #0065FC;
+    border-bottom: 2px solid #0065FC;
     padding-bottom: 16px;
 }
 
                     /* SECTION 1 */
-#filterbar h2{
-    margin-right:2%;
-}
-#filterbar .button{
-    padding:1.5% 1.5%;
-    margin: 1% 0.9%;
-}
+
 
 
 .filter-buttons{
-    display:flex;
+    margin-left: 0.8vw;
     flex-wrap: wrap;
 }
 
-                    /* SECTION 2 */
+#filterbar .button{
+    padding:2vh 1.5vw;
+}
+
+                    /* SECTIONS 2 ET 3 */
 
 #offers{
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
-#offers-main{
-    width: 100vw;
-    padding: 2%;
+#offers-main, #popular{
+    width: 100%;
+    margin-left: 0;
 }
 
-#more{
-    padding-bottom:1%
-}
-
-#popular{
-    padding:2% 2% 0% 2%;
-    margin-left: 0%;
-    width: 100vw;
-}
-
-#popular-cards{
-    display: flex;
+#offers-popular{
+    flex-direction: row;
     justify-content: space-between;
+    gap:2vw;
 }
 
 .pop-card{
-    height:80%;
     width:32%;
-
+    padding:3px;
 }
 
-.pop-card img{
-    height:90%
+#popular img{
+    width:100px;
+    height:98%
 }
-
-h3{
-    font-size: 14px;
-}
-
-p{
-    font-size: 13px;
-    padding: 0;
-    margin: 0;
-}
-
-.notation i{
-    padding:0%;
-    font-size: 12px;
-}
-
-                    /* SECTION 3 */
+                    /* SECTION 4 */
 
 
-.Marseille-features{
-    padding-top: 8px;}
-
-.activites-cards{
+.activity-card{
     align-self: center;
     width:22%;
 }
 
-#popular{
-    height: 240px;
-}
-
-.pop-card{
-    height:70%}
-
-#activities h3{
-padding-top: 5%;
-padding-bottom: 5%;
+.activity-card img{
+    height:210px;
 }
 
 
 
 
-                    /* FOOTER */
+

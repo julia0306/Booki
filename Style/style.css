@@ -1,41 +1,36 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    margin: 2%;
+    margin: 16px 16px 0px 16px;
     max-width: 1400px;
 }
 
-h1,h2{
+                    /* FONT SIZES & SETTINGS */
+
+h1, h2, #locdot{
     font-size: 22px;
 }
 
-h3,p, .subtitle{
+h3, p, .subtitle{
     font-size: 16px;
-    margin:0%;
-    padding:0%
+    margin: 0;
+}
+
+#filterbar h2, footer h2, #research, ::placeholder{
+    font-size: 18px;
+}
+
+#offers p, .notation i{
+    font-size: 14px;
 }
 
 .subtitle{
     font-weight: normal;
 }
 
-#offers p{
-    font-size: 14px;
-}
-
-
-#filterbar h2, footer h2, ::placeholder{
-    font-size: 18px;
-}
-
-#filterbar a{
-    font-size: 17px;
-}
-
 a{
     text-decoration: none;
 }
-
 
 a:active{
     color: blue
@@ -45,8 +40,19 @@ a:visited {
     color:black;
 }
 
+i{
+    color:#0065FC
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+
 section, nav {
-    margin-bottom:4%;
+    margin-bottom:32px;
 }
 
                     /* HEADER */
@@ -61,50 +67,44 @@ nav{
 }
 
 nav ul{
-    list-style: none;
     display:flex;
     justify-content: flex-end;
     gap: 20%;
 }
 
-header a{
-    padding-top: 16px;
-}
-
 header ul a:hover{
     color: #0065FC;
     border-top: 2px solid blue;
-    padding-top: 32px;
+    padding-top:16px;
 }
 
 
                     /* SECTION 1 " RECHERCHE" */
 
 #locdot{
+    color:black;
     background-color: #f2f2f2;
-    font-size:22px;
     padding: 20px 15px;
     border-radius: 16px 0 0 16px;
 }
 
 #searchfield{
-    margin: 2% 0%;
+    margin: 32px 0px;
     display: flex;
 }
 
-#searchtext {
+#searchtext{
     border-left: none;
     border-right: none;
-    border-radius: 0%;
-    border-top: 0.3px solid #f2f2f2; 
-    border-bottom: 0.3px solid #f2f2f2;
-    padding:1% 5% 1% 1%;
+    border-radius: 0px;
+    border-top: 1px solid #f2f2f2; 
+    border-bottom: 1px solid #f2f2f2;
+    padding: 8px 32px 8px 16px;
 }
 
 ::placeholder{
     color: black;
     font-weight: bold;
-    padding-left: 5%
 }
 
 input:focus{
@@ -113,9 +113,8 @@ input:focus{
 
 #research{
     background-color: #0065FC;
-    font-size:18px;
-    padding-right: 2%;
-    padding-left: 2%; 
+    padding-right: 16px;
+    padding-left: 16px; 
     border: none;
     border-radius: 0 16px 16px 0;
     color: white;
@@ -139,15 +138,16 @@ input:focus{
 }
 
 .filter-buttons{
-    width:90vw;
+    margin-left: 1vw;
+    width:95vw;
     display: flex;
     flex-direction: row;
 }
 
 #filterbar .button{
-    font-size: 17px;
-    margin: 1% 1.5%;
-    padding:1% 2%;
+    font-size: 1em;
+    margin: 1vw 0.9vw;
+    padding:16px;
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 25px;
@@ -159,13 +159,10 @@ input:focus{
 
 
 #filterbar i{
-    color:#0065FC;
-    padding-right: 14px;
+    padding-right: 1vw;
 }
 
-
 #info i{
-    color:#0065FC;
     border: 1px solid lightgrey;
     border-radius: 50px;
     margin-right: 8px;
@@ -173,10 +170,10 @@ input:focus{
 }
 
 #info{
-    margin-top: 2%;
+    margin-top: 16px;
 }
 
-                    /* SECTION 2 " OFFRES" */
+                    /* SECTION 2 " HEBERGEMENTS" ET SECTION 3 "POPULAIRES */
 
 
 #offers{
@@ -185,47 +182,42 @@ input:focus{
 }
 
 #offers .section-title{
-    margin-left: 2%;
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Section 2 */
 
+#offers-main, #popular{
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    padding: 16px 32px 24px 32px;
+}
 
 #offers-main{
-    width: 70%;
-    background-color: #f2f2f2;
-    border-radius: 25px;
-    padding: 1%;
+    width:70%
 }
 
 #offers-Marseille {
+    height:75%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 16px;
-}
-
-#more{
-    padding:3%
+    justify-content: space-between;
+    gap: 24px;
 }
 
 .Marseille-card{
-    width: 29%;
-
-    margin-top: 1%;
-    padding: 0.8%;
+    width: 28%;
+    padding:3px;
     border-radius: 16px;
     background-color: #FFFFFF;
     box-shadow: 2px 3px 3px lightgrey;
 }
 
 .Marseille-card a{
-        display:inline;
-        height:100%;
-        padding: 0%;
+    display:inline;
 }
 
 .Marseille-card:hover{
@@ -236,38 +228,22 @@ input:focus{
 
 .Marseille-card img{
     justify-content: flex-start;
-    height:120px;
+    height:130px;
     width:100%;
-    align-self: center;
     border-radius: 16px 16px 0% 0%;
     object-fit:cover
 }
 
 .Marseille-features{
-    height: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
-#popular{
-    width: 30%;
-    padding: 1% 2%;
-    margin-left:2%;
-    background-color: #f2f2f2;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#popular-cards{
-    height:90%;
-}
-
-
-.section-title i{
-    color:#0065FC
+#more{
+    padding: 40px 0px 0px 32px
 }
 
 #popular a{
@@ -277,7 +253,20 @@ input:focus{
 
 #offers-Marseille a{
     display:inline;
-    width:100%;
+}
+
+#popular{
+    width: 30%;
+    margin-left:3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#offers-popular{
+    display: flex;
+    flex-direction: column;
+    gap:20px
 }
 
 #popular h3{
@@ -285,23 +274,20 @@ input:focus{
 }
 
 .pop-card{
-    height:28%;
+    padding:6px;
     display:flex;
     flex-direction: row;
     background-color: #FFFFFF;
     border-radius: 16px;
-    margin-bottom: 24px;
 }
 
 #popular img{
-    padding: 2%;
-    height: 90%;
-    width: 40%;
+    height:135px;
+    width: 125px;
     border-radius: 16px 0px 0px 16px;
     object-fit: cover;
     align-self: center;
 }
-
 
 .pop-card:hover {
     box-shadow: #0065FC 2px 1px 2px ;
@@ -310,13 +296,12 @@ input:focus{
     cursor: pointer;
 }
 
-
-
 .pop-description{
+    width:70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 0% 3%;
+    padding: 2%;
+    justify-content: space-between;
     }
 
 .notation{
@@ -327,20 +312,15 @@ input:focus{
     padding:0%;
 }
 
-.notation-blue i{
-    color:#0065FC
-}
-
-
 .notation-grey i{
     color: #f2f2f2
 }
 
-.pop-card:hover >.pop-description > .notation > .notation-blue i{
+.pop-card:hover > a > .pop-description > .notation > .notation-blue i{
     color: white;
 }
 
-.pop-card:hover > .pop-description> .notation > .notation-grey i{
+.pop-card:hover > a > .pop-description> .notation > .notation-grey i{
     color: darkblue;
 }
 
@@ -354,30 +334,31 @@ input:focus{
     gap:24px;
 }
 
-
-
-.activites-cards{
-    width:24%;
+.activity-card{
+    width:23%;
     box-shadow: 5px 5px 10px lightgrey;
-    border-radius: 25px;
+    border-radius: 16px;
 }
 
 
-.activites-cards:hover{
+.activity-card:hover{
     border: 3px groove grey;
     transition:0.1s ease-in-out;
     cursor: pointer;
 }
 
-.activites-cards img{
-    height:280px;
+.activity-card img{
+    height:350px;
     width: 100%;
     object-fit:cover;
-    border-radius: 25px 25px 0 0 ;
+    border-radius: 16px 16px 0 0 ;
 }
 
-#activities h3{
-    padding:5%
+#activity-section h3{
+    padding: 5%;
+    height:32px;
+    display: flex;
+    align-items: center;
 }
                     /* FOOTER */
 
@@ -395,11 +376,6 @@ footer {
     flex-direction: column;
 }
 
-footer ul{
-    list-style: none;
-    padding: 0;
-    margin-top: 0%;
-}
 
 footer li{
     padding: 3% 0% 0% 0%;
