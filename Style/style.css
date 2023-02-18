@@ -1,18 +1,18 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    margin: 16px 16px 0px 16px;
+    margin: 24px 16px 0px 16px;
     max-width: 1400px;
 }
 
                     /* FONT SIZES & SETTINGS */
 
-h1, h2, #locdot{
+h1, h2, #location-icon{
     font-size: 22px;
 }
 
 h3, p, .subtitle{
-    font-size: 16px;
+    font-size: 15px;
     margin: 0;
 }
 
@@ -36,11 +36,11 @@ a:active{
     color: blue
 }
 
-a:visited {
+a:visited, #location-icon, ::placeholder{
     color:black;
 }
 
-i{
+i, header ul a:hover{
     color:#0065FC
 }
 
@@ -55,16 +55,22 @@ section, nav {
     margin-bottom:32px;
 }
 
+::placeholder, footer h2, .filter-buttons{
+    font-weight: bold;
+}
+
                     /* HEADER */
 
 nav{
     display:flex;
     justify-content: space-between;
 }
+/* aligne la barre de navigation avec le logo*/
 
 #logo{
     height: 19px; 
 }
+/*redimensionne le logo pour qu'il ait la même taille que la nav*/
 
 nav ul{
     display:flex;
@@ -72,28 +78,33 @@ nav ul{
     gap: 20%;
 }
 
+/* met en forme la nav en alignant les 2 items + espace*/
+
 header ul a:hover{
-    color: #0065FC;
     border-top: 2px solid blue;
     padding-top:16px;
 }
 
+/*ajoute un effet au survol*/
 
                     /* SECTION 1 " RECHERCHE" */
 
-#locdot{
-    color:black;
+#location-icon{
     background-color: #f2f2f2;
     padding: 20px 15px;
     border-radius: 16px 0 0 16px;
 }
 
+/* fond gris de l'icone de localisation + marge interne + arrondi des angles */
+
 #searchfield{
-    margin: 32px 0px;
+    margin: 32px 0px 16px 0px;;
     display: flex;
 }
 
-#searchtext{
+/* aligne les items du formulaire de recherche*/
+
+#placeholder{
     border-left: none;
     border-right: none;
     border-radius: 0px;
@@ -102,16 +113,15 @@ header ul a:hover{
     padding: 8px 32px 8px 16px;
 }
 
-::placeholder{
-    color: black;
-    font-weight: bold;
-}
+/* modifie la mise en forme du champ de saisie*/
 
 input:focus{
     outline:none;
 }
 
-#research{
+/* modifie la police du champ de saisie*/ 
+
+#search{
     background-color: #0065FC;
     padding-right: 16px;
     padding-left: 16px; 
@@ -120,47 +130,62 @@ input:focus{
     color: white;
 }
 
-#research:hover{
+/* modifie le bouton "rechercher*/ 
+
+#search:hover{
     background-color: #003bfc;
     cursor:pointer;
 }
+
+/* modifie le bouton "rechercher*/ 
 
 #magnifying-glass{
     display: none;
 }
 
+/*empêche l'affichage du second bouton, prévu pour les mobiles*/ 
+
 #filterbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-weight: bold;
     align-items: center;
+    margin-bottom: 16px;
 }
 
+/* modifie les filtres*/
+
 .filter-buttons{
-    margin-left: 1vw;
-    width:95vw;
+    margin-left: 1%;
+    width:100%;
     display: flex;
     flex-direction: row;
 }
 
+/* modifie la div des boutons*/
+
 #filterbar .button{
     font-size: 1em;
-    margin: 1vw 0.9vw;
-    padding:16px;
+    margin: 1.5% 1.2%;
+    padding: 2vh 1.5vw ;
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 25px;
 }
 
+/* modifie le style d'un bouton*/
+
 #filterbar .button:hover {
     background-color: #DEEBFF;
 }
 
+/* modifie le style d'un bouton au survol*/
 
 #filterbar i{
-    padding-right: 1vw;
+    padding-right : 1vw;
 }
+
+/* ajoute de l'espace autour des icônes dans les boutons*/
 
 #info i{
     border: 1px solid lightgrey;
@@ -169,9 +194,8 @@ input:focus{
     padding: 10px 8px;
 }
 
-#info{
-    margin-top: 16px;
-}
+/* modifie le style de l'icone d'information*/
+
 
                     /* SECTION 2 " HEBERGEMENTS" ET SECTION 3 "POPULAIRES */
 
@@ -181,53 +205,58 @@ input:focus{
     flex-direction: row;
 }
 
-#offers .section-title{
+/* aligne les 2 sections (hébergements et populaires)*/
+
+.section-title{
+    padding-bottom:8px
+}
+
+/* ajoute un espace en-dessous des titres*/
+
+#popular-section .section-title{
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Section 2 */
+/* permet d'aligner l'icone et le titre de la section "populaires"*/
 
-#offers-main, #popular{
+        /* Section 2 */
+
+#Marseille-section, #popular-section{
     background-color: #f2f2f2;
     border-radius: 16px;
     padding: 16px 32px 24px 32px;
 }
 
-#offers-main{
-    width:70%
+#Marseille-section{
+    width:70%;
 }
 
 #offers-Marseille {
-    height:75%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
+    margin-bottom: 32px;
 }
 
 .Marseille-card{
-    width: 28%;
-    padding:3px;
+    width: 29%;
+    padding:2px;
     border-radius: 16px;
     background-color: #FFFFFF;
     box-shadow: 2px 3px 3px lightgrey;
 }
 
-.Marseille-card a{
-    display:inline;
-}
-
 .Marseille-card:hover{
-    border:  3px inset #0065FC ;
+    border:  3px solid #0065FC ;
     transition:.2s ease-in-out;
     cursor: pointer;
 }
 
 .Marseille-card img{
-    justify-content: flex-start;
     height:130px;
     width:100%;
     border-radius: 16px 16px 0% 0%;
@@ -235,72 +264,75 @@ input:focus{
 }
 
 .Marseille-features{
-    margin-top: 5px;
-    margin-left: 5px;
+    padding-top: 0.5vh;
+    padding-left: 0.5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 #more{
-    padding: 40px 0px 0px 32px
+    padding-left:32px
 }
 
-#popular a{
-    display:flex;
-    width:100%;
-}
-
-#offers-Marseille a{
+#offers a{
     display:inline;
 }
 
-#popular{
+#popular-section{
     width: 30%;
-    margin-left:3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    margin-left:2%;
 }
 
 #offers-popular{
     display: flex;
     flex-direction: column;
-    gap:20px
+    gap: 24px;
 }
 
-#popular h3{
-    padding-bottom: 5%;
+/*gap: laisse de l'espace entre chaque card"*/
+
+
+#popular-section a{
+    display:flex;
+    width:100%;
 }
 
-.pop-card{
-    padding:6px;
+/* permet au contenu de chaque card de se mettre en flex*/
+
+#popular-section h3{
+    padding-bottom: 10px;
+}
+
+.popular-card{
+    padding:3px;
     display:flex;
     flex-direction: row;
     background-color: #FFFFFF;
     border-radius: 16px;
 }
 
-#popular img{
-    height:135px;
-    width: 125px;
+/* Espace blanc autour de la carte
+Alignement de l'img avec les features*/
+
+#popular-section img{
+    height:130px;
+    width: 120px;
     border-radius: 16px 0px 0px 16px;
     object-fit: cover;
-    align-self: center;
 }
 
-.pop-card:hover {
+.popular-card:hover {
     box-shadow: #0065FC 2px 1px 2px ;
     transition:1s ease-in-out;
     background-color: #0065FC;
     cursor: pointer;
 }
 
-.pop-description{
-    width:70%;
+.popular-description{
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    padding:8px 0px 8px 8px;
     justify-content: space-between;
     }
 
@@ -316,18 +348,19 @@ input:focus{
     color: #f2f2f2
 }
 
-.pop-card:hover > a > .pop-description > .notation > .notation-blue i{
+.popular-card:hover > a > .popular-description > .notation > .notation-blue i{
     color: white;
 }
 
-.pop-card:hover > a > .pop-description> .notation > .notation-grey i{
+.popular-card:hover > a > .popular-description > .notation > .notation-grey i{
     color: darkblue;
 }
 
                     /* SECTION 3 "ACTIVITES" */
 
 
-#cards{
+#activities{
+    width:100%;
     display:flex;
     flex-direction: row; 
     justify-content: space-between;
@@ -375,7 +408,6 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
 
 footer li{
     padding: 3% 0% 0% 0%;

@@ -8,14 +8,13 @@ body {
                     /* FONT SIZES & SETTINGS */
 
 p, .notation i{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
 /* HEADER */
 
 header ul a:hover{
-    color: #0065FC;
     border-top: none;
     border-bottom: 2px solid #0065FC;
     padding-bottom: 16px;
@@ -24,23 +23,13 @@ header ul a:hover{
                     /* SECTION 1 */
 
 
-
-.filter-buttons{
-    margin-left: 0.8vw;
-    flex-wrap: wrap;
-}
-
-#filterbar .button{
-    padding:2vh 1.5vw;
-}
-
                     /* SECTIONS 2 ET 3 */
 
 #offers{
     flex-wrap: wrap;
 }
 
-#offers-main, #popular{
+#Marseille-section, #popular-section{
     width: 100%;
     margin-left: 0;
 }
@@ -48,23 +37,21 @@ header ul a:hover{
 #offers-popular{
     flex-direction: row;
     justify-content: space-between;
-    gap:2vw;
 }
 
-.pop-card{
+.popular-card{
     width:32%;
-    padding:3px;
+    padding: 6px;
 }
 
-#popular img{
-    width:100px;
-    height:98%
+#popular-section img{
+    width:90px;
+    height:100%;
 }
                     /* SECTION 4 */
 
 
 .activity-card{
-    align-self: center;
     width:22%;
 }
 
