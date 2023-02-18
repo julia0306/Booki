@@ -65,12 +65,11 @@ nav{
     display:flex;
     justify-content: space-between;
 }
-/* aligne la barre de navigation avec le logo*/
+
 
 #logo{
     height: 19px; 
 }
-/*redimensionne le logo pour qu'il ait la même taille que la nav*/
 
 nav ul{
     display:flex;
@@ -78,14 +77,11 @@ nav ul{
     gap: 20%;
 }
 
-/* met en forme la nav en alignant les 2 items + espace*/
-
 header ul a:hover{
     border-top: 2px solid blue;
     padding-top:16px;
 }
 
-/*ajoute un effet au survol*/
 
                     /* SECTION 1 " RECHERCHE" */
 
@@ -95,14 +91,10 @@ header ul a:hover{
     border-radius: 16px 0 0 16px;
 }
 
-/* fond gris de l'icone de localisation + marge interne + arrondi des angles */
-
 #searchfield{
     margin: 32px 0px 16px 0px;;
     display: flex;
 }
-
-/* aligne les items du formulaire de recherche*/
 
 #placeholder{
     border-left: none;
@@ -113,13 +105,9 @@ header ul a:hover{
     padding: 8px 32px 8px 16px;
 }
 
-/* modifie la mise en forme du champ de saisie*/
-
 input:focus{
     outline:none;
 }
-
-/* modifie la police du champ de saisie*/ 
 
 #search{
     background-color: #0065FC;
@@ -130,20 +118,14 @@ input:focus{
     color: white;
 }
 
-/* modifie le bouton "rechercher*/ 
-
 #search:hover{
     background-color: #003bfc;
     cursor:pointer;
 }
 
-/* modifie le bouton "rechercher*/ 
-
 #magnifying-glass{
     display: none;
 }
-
-/*empêche l'affichage du second bouton, prévu pour les mobiles*/ 
 
 #filterbar {
     display: flex;
@@ -153,16 +135,12 @@ input:focus{
     margin-bottom: 16px;
 }
 
-/* modifie les filtres*/
-
 .filter-buttons{
     margin-left: 1%;
     width:100%;
     display: flex;
     flex-direction: row;
 }
-
-/* modifie la div des boutons*/
 
 #filterbar .button{
     font-size: 1em;
@@ -173,19 +151,13 @@ input:focus{
     border-radius: 25px;
 }
 
-/* modifie le style d'un bouton*/
-
 #filterbar .button:hover {
     background-color: #DEEBFF;
 }
 
-/* modifie le style d'un bouton au survol*/
-
 #filterbar i{
     padding-right : 1vw;
 }
-
-/* ajoute de l'espace autour des icônes dans les boutons*/
 
 #info i{
     border: 1px solid lightgrey;
@@ -194,10 +166,8 @@ input:focus{
     padding: 10px 8px;
 }
 
-/* modifie le style de l'icone d'information*/
 
-
-                    /* SECTION 2 " HEBERGEMENTS" ET SECTION 3 "POPULAIRES */
+                    /* SECTION 2 " HEBERGEMENTS" & SECTION 3 "POPULAIRES */
 
 
 #offers{
@@ -205,13 +175,9 @@ input:focus{
     flex-direction: row;
 }
 
-/* aligne les 2 sections (hébergements et populaires)*/
-
 .section-title{
     padding-bottom:8px
 }
-
-/* ajoute un espace en-dessous des titres*/
 
 #popular-section .section-title{
     display:flex;
@@ -219,7 +185,7 @@ input:focus{
     align-items: center;
 }
 
-/* permet d'aligner l'icone et le titre de la section "populaires"*/
+
 
         /* Section 2 */
 
@@ -275,10 +241,6 @@ input:focus{
     padding-left:32px
 }
 
-#offers a{
-    display:inline;
-}
-
 #popular-section{
     width: 30%;
     margin-left:2%;
@@ -290,15 +252,11 @@ input:focus{
     gap: 24px;
 }
 
-/*gap: laisse de l'espace entre chaque card"*/
-
 
 #popular-section a{
     display:flex;
     width:100%;
 }
-
-/* permet au contenu de chaque card de se mettre en flex*/
 
 #popular-section h3{
     padding-bottom: 10px;
@@ -311,9 +269,6 @@ input:focus{
     background-color: #FFFFFF;
     border-radius: 16px;
 }
-
-/* Espace blanc autour de la carte
-Alignement de l'img avec les features*/
 
 #popular-section img{
     height:130px;
@@ -356,7 +311,7 @@ Alignement de l'img avec les features*/
     color: darkblue;
 }
 
-                    /* SECTION 3 "ACTIVITES" */
+                    /* SECTION 4 "ACTIVITES" */
 
 
 #activities{

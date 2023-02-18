@@ -3,8 +3,6 @@ body {
 }
 
 
-
-
                     /* FONT SIZES & SETTINGS */
 
 p, .notation i{
@@ -12,7 +10,7 @@ p, .notation i{
 }
 
 
-/* HEADER */
+                    /* HEADER */
 
 header ul a:hover{
     border-top: none;
@@ -23,16 +21,21 @@ header ul a:hover{
                     /* SECTION 1 */
 
 
-                    /* SECTIONS 2 ET 3 */
+                    /* SECTION 2 "HEBERGEMENTS" & SECTION 3 "POPULAIRES"*/
 
 #offers{
     flex-wrap: wrap;
 }
 
+            /* Section 2 */
+
 #Marseille-section, #popular-section{
     width: 100%;
     margin-left: 0;
 }
+
+
+            /* Section 3 */
 
 #offers-popular{
     flex-direction: row;
@@ -48,7 +51,7 @@ header ul a:hover{
     width:90px;
     height:100%;
 }
-                    /* SECTION 4 */
+                    /* SECTION 4 "ACTIVITES" */
 
 
 .activity-card{
@@ -60,6 +63,6 @@ header ul a:hover{
 }
 
 
-
+                    /* FOOTER */
 
 

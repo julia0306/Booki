@@ -2,10 +2,14 @@ body{
     margin:32px 0px 0px 0px;
 }
 
+
+
                     /* FONT SIZES & SETTINGS */
 #activity-section, #search-section {
     padding-bottom:32px;
 }
+
+
 
                     /* HEADER */
                  
@@ -36,6 +40,8 @@ header li a{
 header li a:hover{
     padding: 0%;
 }
+
+
 
                     /* SECTION 1 */
 
@@ -89,14 +95,12 @@ color: white;
     align-self: flex-start;
 }
 
-                    /* SECTIONS 2 ET 3 */
+
+
+                    /* SECTION 2 "HEBERGEMENTS" & SECTION 3 "POPULAIRES"*/
 
 #offers{
     flex-direction: column-reverse;
-}
-
-#Marseille-section{
-    background-color: white;
 }
 
 #offers-Marseille, #offers-popular{
@@ -111,7 +115,30 @@ color: white;
     margin:0
 }
 
-/*enlève la marge qui existe en version desktop*/ 
+
+            /* Section 2 */
+
+#Marseille-section{
+    background-color: white;
+}
+
+.Marseille-card{
+    width:100%;
+    height:200px;
+    padding:0;
+}
+
+.Marseille-card img{
+    height:130px;
+    object-fit:cover;
+}
+
+#more{
+    display: none;
+}
+
+
+            /* Section 3 */
 
 #popular-section{
     padding-bottom: 48px;
@@ -132,24 +159,8 @@ color: white;
 }
 
 
-.Marseille-card{
-    width:100%;
-    height:200px;
-    padding:0;
-}
 
-/*padding oblig pour version desktop. A enlever pour mobile, afin que les marges de 16px soient respectées*/
-
-.Marseille-card img{
-    height:130px;
-    object-fit:cover;
-}
-
-#more{
-    display: none;
-}
-
-                    /* SECTION 4 */
+                    /* SECTION 4 "ACTIVITES" */
 
 #activity-section{
     margin:16px;
@@ -168,10 +179,10 @@ color: white;
     height: 200px;
     }
 
-
 .activity-card img{
     height:150px;
 }
+
 
                    
                     /* FOOTER */
