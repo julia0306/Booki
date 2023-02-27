@@ -169,6 +169,7 @@ input:focus{
 
                     /* SECTION 2 " HEBERGEMENTS" & SECTION 3 "POPULAIRES */
 
+        /* CSS applied to both sections */
 
 #offers{
     display:flex;
@@ -179,21 +180,33 @@ input:focus{
     padding-bottom:8px
 }
 
-#popular-section .section-title{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-        /* Section 2 */
-
 #Marseille-section, #popular-section{
     background-color: #f2f2f2;
     border-radius: 16px;
     padding: 16px 32px 24px 32px;
 }
+
+.notation{
+    display:flex;
+}
+
+.notation i{
+    padding:0%;
+}
+
+.notation-grey i{
+    color: #f2f2f2
+}
+
+.popular-card:hover > a > .popular-description > .notation > .notation-blue i{
+    color: white;
+}
+
+.popular-card:hover > a > .popular-description > .notation > .notation-grey i{
+    color: darkblue;
+}
+
+        /* Section 2 */
 
 #Marseille-section{
     width:70%;
@@ -241,9 +254,17 @@ input:focus{
     padding-left:32px
 }
 
+        /* Section 3 */
+
 #popular-section{
     width: 30%;
     margin-left:2%;
+}
+
+#popular-section .section-title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #offers-popular{
@@ -251,7 +272,6 @@ input:focus{
     flex-direction: column;
     gap: 24px;
 }
-
 
 #popular-section a{
     display:flex;
@@ -291,25 +311,6 @@ input:focus{
     justify-content: space-between;
     }
 
-.notation{
-    display:flex;
-}
-
-.notation i{
-    padding:0%;
-}
-
-.notation-grey i{
-    color: #f2f2f2
-}
-
-.popular-card:hover > a > .popular-description > .notation > .notation-blue i{
-    color: white;
-}
-
-.popular-card:hover > a > .popular-description > .notation > .notation-grey i{
-    color: darkblue;
-}
 
                     /* SECTION 4 "ACTIVITES" */
 
@@ -348,8 +349,11 @@ input:focus{
     display: flex;
     align-items: center;
 }
+
+
                     /* FOOTER */
 
+                    
 footer {
     background-color: #f2f2f2;
     padding: 2%;
