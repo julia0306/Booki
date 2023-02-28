@@ -30,11 +30,9 @@ h3, p, .subtitle{
 
 a{
     text-decoration: none;
+    color: black;
 }
 
-a:active{
-    color: blue
-}
 
 a:visited, #location-icon, ::placeholder{
     color:black;
