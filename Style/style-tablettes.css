@@ -1,68 +1,60 @@
 body {
-    margin:32px 32px 0px 32px;
+  margin: 32px 32px 0px 32px;
 }
 
+/* FONT SIZES & SETTINGS */
 
-                    /* FONT SIZES & SETTINGS */
-
-p, .notation i{
-    font-size: 12px;
+p,
+.notation i {
+  font-size: 12px;
 }
 
+/* HEADER */
 
-                    /* HEADER */
-
-header ul a:hover{
-    border-top: none;
-    border-bottom: 2px solid #0065FC;
-    padding-bottom: 16px;
+header ul a:hover {
+  border-top: none;
+  border-bottom: 2px solid #0065fc;
+  padding-bottom: 16px;
 }
 
-                    /* SECTION 1 */
+/* SECTION 1 "RECHERCHE"*/
 
+/* SECTION 2 "HEBERGEMENTS" & SECTION 3 "POPULAIRES"*/
 
-                    /* SECTION 2 "HEBERGEMENTS" & SECTION 3 "POPULAIRES"*/
-
-#offers{
-    flex-wrap: wrap;
+#offers {
+  flex-wrap: wrap;
 }
 
-            /* Section 2 */
-
-#Marseille-section, #popular-section{
-    width: 100%;
-    margin-left: 0;
+#Marseille-section,
+#popular-section {
+  margin-left: 0;
+  width: 100%;
 }
 
+/* Section 3 "Les plus populaires" */
 
-            /* Section 3 */
-
-#offers-popular{
-    flex-direction: row;
-    justify-content: space-between;
+#offers-popular {
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.popular-card{
-    width:32%;
-    padding: 6px;
+.popular-card {
+  width: 32%;
+  padding: 6px;
 }
 
-#popular-section img{
-    width:90px;
-    height:100%;
+#popular-section img {
+  width: 90px;
+  height: 100%;
 }
-                    /* SECTION 4 "ACTIVITES" */
+/* SECTION 4 "ACTIVITES" */
 
-
-.activity-card{
-    width:22%;
-}
-
-.activity-card img{
-    height:210px;
+.activity-card {
+  width: 22%;
 }
 
+.activity-card img {
+  height: 210px;
+}
 
-                    /* FOOTER */
-
-
+/* FOOTER */
