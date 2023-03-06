@@ -88,6 +88,10 @@ header li a:hover {
   font-size: 0.75rem;
 }
 
+#filterbar .button:active {
+  background-color: white;
+}
+
 #filterbar h2 {
   align-self: flex-start;
 }
