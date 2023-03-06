@@ -2,7 +2,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   margin: 0 auto;
-  padding: 24px 16px 0px 16px;
+  padding: 24px 24px 0px 24px;
   max-width: 1400px;
 }
 
@@ -159,7 +159,7 @@ input:focus {
   margin: 1.5% 1.2%;
   border: 1px solid lightgrey;
   border-radius: 25px;
-  padding: 2vh 1.5vw;
+  padding: 1.5% 1.5vw;
   background-color: white;
   font-size: 0.9rem;
 }
@@ -245,7 +245,7 @@ input:focus {
 .Marseille-card:hover {
   border: 3px solid #0065fc;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s;
 }
 
 .Marseille-card img {
@@ -311,9 +311,9 @@ input:focus {
 }
 
 .popular-card:hover {
-  box-shadow: #0065fc 2px 1px 2px;
-  background-color: #0065fc;
-  transition: 1s ease-in-out;
+  box-shadow: rgba(0, 100, 250, 0.5);
+  background-color: rgba(0, 100, 250, 0.75);
+  transition: 0.8s;
   cursor: pointer;
 }
 
@@ -343,7 +343,7 @@ input:focus {
 .activity-card:hover {
   border: 3px groove grey;
   cursor: pointer;
-  transition: 0.1s ease-in-out;
+  transition: 0.3s;
 }
 
 .activity-card img {
