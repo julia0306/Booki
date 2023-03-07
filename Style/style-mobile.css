@@ -8,6 +8,22 @@ body {
   padding-bottom: 32px;
 }
 
+/*Hover effects reset */
+
+.Marseille-card:hover {
+  border: none;
+  cursor: pointer;
+}
+
+.popular-card:hover {
+  box-shadow: none;
+  background-color: white;
+}
+
+.activity-card:hover {
+  border: none;
+}
+
 /* HEADER */
 
 nav {

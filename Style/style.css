@@ -70,7 +70,7 @@ nav {
 
 ::placeholder,
 footer h2,
-.filter-buttons {
+.filter-buttons, .euro {
   font-weight: bold;
 }
 
@@ -212,7 +212,6 @@ input:focus {
 }
 
 
-
 /* SECTION 2 "HEBERGEMENTS" & SECTION 3 "POPULAIRES"*/
 
 #Marseille-section {
@@ -234,6 +233,12 @@ input:focus {
   border-radius: 16px;
   padding: 2px;
   background-color: #ffffff;
+}
+
+.Marseille-card:hover {
+  border: 1.5px solid #0065fc;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .Marseille-card img {
@@ -298,6 +303,13 @@ input:focus {
   object-fit: cover;
 }
 
+.popular-card:hover {
+  box-shadow: rgba(0, 100, 250, 0.5);
+  background-color: rgba(0, 100, 250, 0.75);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
 .popular-description {
   display: flex;
   flex-direction: column;
@@ -319,6 +331,12 @@ input:focus {
   box-shadow: 5px 5px 10px lightgrey;
   border-radius: 16px;
   width: 23%;
+}
+
+.activity-card:hover {
+  border: 3px groove grey;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .activity-card img {
