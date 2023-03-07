@@ -8,20 +8,20 @@ body {
   padding-bottom: 32px;
 }
 
-#search:visited {
+#search:active {
   background-color: white;
 }
 
-#filterbar .button:visited{
+#filterbar .button:active{
   background-color: white;
 }
 
-.Marseille-card:visited {
+.Marseille-card:active {
   border: none;
   cursor: pointer;
 }
 
-.popular-card:visited {
+.popular-card:active {
   box-shadow: none;
   background-color: none;
 }
