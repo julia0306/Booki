@@ -3,20 +3,15 @@ body {
 }
 
 /* FONT SIZES & SETTINGS */
-#activity-section,
-#search-section {
-  padding-bottom: 32px;
-}
 
 /*Hover effects reset */
 
 .Marseille-card:hover {
-  border: none;
+  background-color: white;
   cursor: pointer;
 }
 
 .popular-card:hover {
-  box-shadow: none;
   background-color: white;
 }
 
@@ -62,6 +57,7 @@ header li a:hover {
 
 #search-section {
   margin: 0px 16px;
+  padding-bottom: 32px;
 }
 
 #search {
@@ -131,17 +127,20 @@ header li a:hover {
 /* Section 2 "Hébergements à Marseille*/
 
 #Marseille-section {
+  padding: 16px 16px 32px 16px;
   background-color: white;
 }
 
 .Marseille-card {
+  box-sizing: border-box;
   width: 100%;
-  height: 200px;
-  padding: 0;
+  height: 210px;
+  padding: 1% 1% 0 1%;
 }
 
 .Marseille-card img {
   height: 130px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -157,7 +156,7 @@ header li a:hover {
 
 #popular-section img {
   width: 30%;
-  height: 130px;
+  height: 110px;
   padding: 0;
 }
 
@@ -172,7 +171,7 @@ header li a:hover {
 /* SECTION 4 "ACTIVITES" */
 
 #activity-section {
-  margin: 16px;
+  margin: 16px 16px 64px 16px;
 }
 
 #activity-section h3 {
