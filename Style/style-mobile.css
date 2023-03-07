@@ -8,20 +8,20 @@ body {
   padding-bottom: 32px;
 }
 
-#search:active {
+#search:hover {
   background-color: white;
 }
 
-#filterbar .button:active{
+#filterbar .button:hover{
   background-color: white;
 }
 
-.Marseille-card:active {
+.Marseille-card:hover {
   border: none;
   cursor: pointer;
 }
 
-.popular-card:active {
+.popular-card:hover {
   box-shadow: none;
   background-color: none;
 }
