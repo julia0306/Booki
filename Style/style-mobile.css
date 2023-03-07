@@ -8,24 +8,6 @@ body {
   padding-bottom: 32px;
 }
 
-#search:hover {
-  background-color: white;
-}
-
-#filterbar .button:hover{
-  background-color: white;
-}
-
-.Marseille-card:hover {
-  border: none;
-  cursor: pointer;
-}
-
-.popular-card:hover {
-  box-shadow: none;
-  background-color: none;
-}
-
 /* HEADER */
 
 nav {
