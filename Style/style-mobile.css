@@ -8,6 +8,24 @@ body {
   padding-bottom: 32px;
 }
 
+#search:visited {
+  background-color: white;
+}
+
+#filterbar .button:visited{
+  background-color: white;
+}
+
+.Marseille-card:visited {
+  border: none;
+  cursor: pointer;
+}
+
+.popular-card:visited {
+  box-shadow: none;
+  background-color: none;
+}
+
 /* HEADER */
 
 nav {
@@ -86,10 +104,6 @@ header li a:hover {
   width: 40%;
   padding: 2.5% 1.5vw;
   font-size: 0.75rem;
-}
-
-#filterbar .button:active {
-  background-color: white;
 }
 
 #filterbar h2 {
