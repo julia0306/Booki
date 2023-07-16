@@ -1,0 +1,4 @@
+# Booki
+![Project Cover](https://i.ibb.co/3hjhFWb/Booki-accueil.webp)
+## Description
+La finalité de ce projet était d'intégrer le site de Booki, une plateforme de réservation de vacances. Cette intégration devait être réalisée de manière responsive, à partir des maquettes Desktop, tablette et mobile fournies sur Figma. Elle devait également se faire en Desktop-first et a été l'occasion de mettre en application les notions de margin et de padding, d'effets au survol, mais également de mieux comprendre les balises sémantiques et de mettre en place mes premiers formulaires... Après avoir réalisé une analyse approfondie des maquettes, j'ai pu tester ma bonne compréhension de Flexbox. Il a également fallu veiller à l'import des polices requises ainsi qu'à l'implémentation des icônes FontAwesome nécessaires pour mener à bien le projet. 
